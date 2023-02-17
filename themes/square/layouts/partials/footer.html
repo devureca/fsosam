@@ -1,0 +1,22 @@
+<footer class="mt-4">
+
+	<div class="container">
+		<div class="row">
+			<div class="text-center p-2">
+				 {{if or (.Site.Params.footer.trademark) (.Site.Params.footer.author) (.Site.Params.footer.copyright) (.Site.Params.footer.bText) }}
+
+				 	{{ if .Site.Params.footer.trademark }}<span>&copy; {{ now.Format "2006" }}</span>{{ end }}
+				 	{{ if .Site.Params.footer.author }}<span><a href="{{ .Site.BaseURL }}">{{ .Title }}</a></span>{{ end }}
+				 	{{ range .Site.Params.footer.bText }}<span>{{ . | safeHTML}}</span>{{ end }}
+
+				 {{ end }}
+			</div>
+		</div>
+	</div>
+
+  <!-- JavaScript  -->
+  {{ $bootstrap := resources.Get "js/bootstrap.bundle.min.js" }}
+  {{ $js := slice $bootstrap | resources.Concat "js/bundle.js" | resources.Minify }}
+
+  <script src="{{$js.RelPermalink}}" defer></script>
+</footer>

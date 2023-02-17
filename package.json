@@ -1,0 +1,14 @@
+{
+  "name": "basic-square",
+  "version": "1.0.0",
+  "description": "basic-square theme for Hugo",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "devureca",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}

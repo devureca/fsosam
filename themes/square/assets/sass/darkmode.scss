@@ -1,0 +1,21 @@
+/** DARKMODE **/
+[data-theme="dark"] {
+	background-color: var(--bs-dark) !important;
+	color: var(--bs-white);
+}
+
+[data-theme="dark"] .bg-light {
+	background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+	background-color: var(--bs-dark) !important;
+}
+
+[data-theme="dark"] .bg-black {
+	background-color: var(--bs-white) !important;
+}
+
+[data-theme="dark"] a{
+	color: $gray-400;
+}
