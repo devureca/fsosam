@@ -2,8 +2,10 @@ baseURL = '/'
 languageCode = 'en-us'
 title = 'Basic Theme | @square'
 theme = "square"
+paginate = 7
 
 [params]
+	author = "Gianfranco Ureta"
     custom_js = ["js/custom.js"]
 
     [params.footer]
@@ -16,26 +18,26 @@ theme = "square"
 			"Made with &#10084; <a href=\"https://devureca.com/\">@devureca</a>"
 		]
 
-  [module]
-    [[module.mounts]]
-      source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-      target = "assets/js/bootstrap.bundle.min.js"
+[module]
+	[[module.mounts]]
+		source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+		target = "assets/js/bootstrap.bundle.min.js"
 
 [menu]
 	[[menu.main]]
 		identifier	= "item1"
-		name		= "Item 1"
-		url 		= "item1/"
+		name		= "Item1"
+		url 		= "/item1/"
 		weight		= 1
 
 	[[menu.main]]
 		identifier	= "item2"
-		name		= "Item 2"
-		url 		= "item2/"
+		name		= "Item2"
+		url 		= "/posts/"
 		weight		= 2
 
 	[[menu.main]]
 		identifier	= "item3"
-		name		= "Item 3"
-		url 		= "item3/"
+		name		= "Item3"
+		url 		= "/item3/"
 		weight		= 3

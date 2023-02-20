@@ -6,7 +6,7 @@
 				 {{if or (.Site.Params.footer.trademark) (.Site.Params.footer.author) (.Site.Params.footer.copyright) (.Site.Params.footer.bText) }}
 
 				 	{{ if .Site.Params.footer.trademark }}<span>&copy; {{ now.Format "2006" }}</span>{{ end }}
-				 	{{ if .Site.Params.footer.author }}<span><a href="{{ .Site.BaseURL }}">{{ .Title }}</a></span>{{ end }}
+				 	{{ if .Site.Params.footer.author }}<span><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></span>{{ end }}
 				 	{{ range .Site.Params.footer.bText }}<span>{{ . | safeHTML}}</span>{{ end }}
 
 				 {{ end }}
