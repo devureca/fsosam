@@ -19,4 +19,15 @@
   {{ $js := slice $bootstrap | resources.Concat "js/bundle.js" | resources.Minify }}
 
   <script src="{{$js.RelPermalink}}" defer></script>
+  <script>
+	if (window.netlifyIdentity) {
+	  window.netlifyIdentity.on("init", user => {
+		if (!user) {
+		  window.netlifyIdentity.on("login", () => {
+			document.location.href = "/admin/";
+		  });
+		}
+	  });
+	}
+  </script>
 </footer>
