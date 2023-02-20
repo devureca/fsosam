@@ -1,11 +1,11 @@
 baseURL = '/'
 languageCode = 'en-us'
-title = 'Basic Theme | @square'
+title = 'Francisco Sosa | fsosam'
 theme = "square"
 paginate = 7
 
 [params]
-	author = "Gianfranco Ureta"
+	author = "Francisco Sosa"
     custom_js = ["js/custom.js"]
 
     [params.footer]
